@@ -9,7 +9,8 @@
 ## How To Use ⬇️
 
 - First you need to install the required dependencies (You will find it in main.go)
-- Create .env file and add this line
+- Create .env file and add this line to connect to your mongodb atlas
+- Change the collection name to the collection you set it, in the configs/setup.go at GetCollection function.
 
 ```bash
 MONGOURI = "Your Mongo database connect URI"
@@ -20,6 +21,7 @@ Finally use the command below to launch the server in the terminal and you ready
 ```bash
 go run main.go
 ```
+
 ---
 
 Restful routes:
@@ -27,5 +29,5 @@ Restful routes:
 
 User scheme:
 ![25335](https://user-images.githubusercontent.com/96744413/171936646-6d79c0f6-b108-43a9-ad3a-7d5f6d453862.png)
----
 
+---
