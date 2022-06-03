@@ -22,7 +22,10 @@ go run main.go
 ```
 ---
 Restful routes:
+
 ![41241](https://user-images.githubusercontent.com/96744413/171936617-9cf51561-3614-4e8a-992e-0789da00d416.png)
+
+User scheme:
 ![25335](https://user-images.githubusercontent.com/96744413/171936646-6d79c0f6-b108-43a9-ad3a-7d5f6d453862.png)
 ---
 
