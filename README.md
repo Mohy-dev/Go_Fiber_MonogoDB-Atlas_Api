@@ -21,8 +21,8 @@ Finally use the command below to launch the server in the terminal and you ready
 go run main.go
 ```
 ---
-Restful routes:
 
+Restful routes:
 ![41241](https://user-images.githubusercontent.com/96744413/171936617-9cf51561-3614-4e8a-992e-0789da00d416.png)
 
 User scheme:
