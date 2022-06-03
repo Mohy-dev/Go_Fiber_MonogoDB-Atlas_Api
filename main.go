@@ -24,4 +24,4 @@ func main() {
 	app.Listen(":6000")
 }
 
-// MONGOURI=mongodb+srv://golang:12345@cluster0.m1nvx.mongodb.net/?retryWrites=true&w=majority
+
