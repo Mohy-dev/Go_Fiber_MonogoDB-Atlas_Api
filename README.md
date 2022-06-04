@@ -11,6 +11,7 @@
 - First you need to install the required dependencies (You will find it in main.go)
 - Create .env file and add this line to connect to your mongodb atlas
 - Change the collection name to the collection you set it, in the configs/setup.go at GetCollection function.
+- Server is running on port 6000.
 
 ```bash
 MONGOURI = "Your Mongo database connect URI"
