@@ -28,10 +28,38 @@ go run main.go
 
 ## Restful routes:
 
-![41241](https://user-images.githubusercontent.com/96744413/171936617-9cf51561-3614-4e8a-992e-0789da00d416.png)
-
+```go
+func UserRoute(app *fiber.App) {
+	app.Post("/user", controllers.CreateUser)       // Create a new user
+	app.Get("/user/:id", controllers.GetUser)       // Get a user by id
+	app.Get("/user", controllers.GetAllUsers)       // Get all users
+	app.Put("/user/:id", controllers.EditUser)      // Edit a user
+	app.Delete("/user/:id", controllers.DeleteUser) // Delete a user
+	app.Delete("/users", controllers.PurgeUsers)    // Delete all users
+}
+```
 ## User scheme:
 
-![25335](https://user-images.githubusercontent.com/96744413/171936646-6d79c0f6-b108-43a9-ad3a-7d5f6d453862.png)
+```go
+type User struct {
+	Id        primitive.ObjectID `json:"id omitempty"`
+	Name      string             `json:"name,omitempty,validate:"required""`
+	Age       int                `json:"age",omitempty,validate:"required"`
+	Email     string             `json:"email", omitempty, validate:"required"`
+	Gender    string             `json:"gender",omitempty, default:"x"`
+	Location  Location           `json:"location", omitempty, default:"Empty"`
+	Title     string             `json:"title", omitempty, validate:"required"`
+	CreatedAt time.Time          `json:"created_at", omitempty`
+	UpdatedAt time.Time          `json:"updated_at", omitempty`
+}
+
+type Location struct {
+	Street    string    `json:"street,omitempty"`
+	City      string    `json:"city,omitempty"`
+	State     string    `json:"state,omitempty"`
+	VisitedAt time.Time `json:"visitedAt,omitempty"`
+}
+```
 
 ---
+
