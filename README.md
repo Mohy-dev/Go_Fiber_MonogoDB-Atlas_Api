@@ -63,7 +63,7 @@ type Location struct {
 
 ---
 <p align="center">
-  <img src="https://blog.jetbrains.com/wp-content/uploads/2021/02/Go_8001611039611515.gif" alt="GO"/>
+  <img src="https://user-images.githubusercontent.com/96744413/172076517-71e0a3c4-7f41-496b-b42e-6ac6ccac45ad.gif" alt="GO"/>
 </p>
 
 
