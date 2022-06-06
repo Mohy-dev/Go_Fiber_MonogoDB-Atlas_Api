@@ -16,7 +16,7 @@ MONGOURI = "Your Mongo database connect URI"
 ```
 
 - Change the collection name to the collection name you set it on atlas, in the `configs/setup.go` at GetCollection function.
-- Server is running on port 6000 you can change it at `main.go`.
+- Server is running on port 6000, you can change the port at `main.go`.
 
 Finally use the command below to launch the server in the terminal and you ready to go
 
